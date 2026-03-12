@@ -1,41 +1,42 @@
-🚌 VETIAS COLLEGE BUS MANAGEMENT SYSTEM
+# 🚌 VETIAS COLLEGE BUS MANAGEMENT SYSTEM
 
 ![Version](https://img.shields.io/badge/version-3.2-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.9+-yellow.svg)
 ![Flask](https://img.shields.io/badge/framework-Flask-lightgrey.svg)
+![Database](https://img.shields.io/badge/database-SQLite%20%7C%20PostgreSQL-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-Active-success)
+![Status](https://img.shields.io/badge/status-Active-success.svg)
 
-A secure and intelligent transportation management platform developed for VET Institute of Arts and Science.
-The system modernizes traditional bus attendance systems by integrating dynamic QR authentication, GPS tracking, device binding security, and geofenced attendance verification.
+A secure and intelligent transportation management platform developed for **VET Institute of Arts and Science**.
+The system modernizes traditional bus attendance systems by integrating **dynamic QR authentication, GPS tracking, device binding security, and geofenced attendance verification**.
 
 It ensures:
 
-Student safety
+* Student safety
+* Operational transparency
+* Real-time monitoring
+* Proxy-proof attendance
 
-Operational transparency
+---
 
-Real-time monitoring
+## 🎯 PROJECT OBJECTIVE
 
-Proxy-proof attendance
+The goal of this system is to **digitize and automate student bus attendance and transport monitoring** in educational institutions.
 
-🎯 PROJECT OBJECTIVE
+Traditional bus attendance systems rely on **manual registers or driver memory**, which leads to:
 
-The goal of this system is to digitize and automate student bus attendance and transport monitoring in educational institutions.
+* Human errors
+* Proxy attendance
+* Lack of real-time monitoring
+* Poor accountability
 
-Traditional bus attendance systems rely on manual registers or driver memory, which leads to:
+The **VETIAS Bus Management System** solves these issues by combining **QR authentication, GPS validation, and device-level security**, ensuring accurate and secure transport management.
 
-Human errors
+---
 
-Proxy attendance
+## 🏗 SYSTEM ARCHITECTURE
 
-Lack of real-time monitoring
-
-Poor accountability
-
-The VETIAS Bus Management System solves these issues by combining QR authentication, GPS validation, and device-level security, ensuring accurate and secure transport management.
-
-🏗 SYSTEM ARCHITECTURE
+```
 Student Mobile Browser
         │
         │ QR Scan + GPS Location
@@ -52,99 +53,119 @@ Admin Dashboard
         │
         ▼
 Driver GPS Broadcasting
-🌟 CORE FEATURES
-👨‍🎓 STUDENT PORTAL
-Feature	Description
-🔐 Secure Login	Role-based authentication system
-📷 QR Boarding	Scan dynamic QR code to mark attendance
-📍 Geofence Validation	Attendance allowed only near the bus
-📱 Device Binding	One account linked to one device
-📜 Boarding History	View complete boarding logs
-📩 Complaint System	Report issues directly to administration
-🚍 DRIVER MODULE
-Feature	Description
-📡 Live GPS Tracking	Driver device broadcasts bus location
-👥 Passenger Manifest	Real-time list of students on board
-✅ Smart Boarding Feedback	Instant success/failure message
-🚏 Geofence Alerts	Alerts when bus reaches a stop
-📊 Trip Monitoring	Track boarding activity during trip
-🛡 ADMIN CONSOLE
-Feature	Description
-👨‍💼 Student Management	Add, update, or remove students
-🚌 Route Management	Assign buses and transport routes
-💰 Fee Monitoring	Track transport fee payment status
-📧 Automated Notifications	SMS / Email alerts for pending payments
-🔒 Security Control	Reset device bindings remotely
-📊 Data Analytics	Attendance trends and bus occupancy
-🛠 TECHNOLOGY STACK
-Backend
+```
 
-Python
+---
 
-Flask Framework
+## 🌟 CORE FEATURES
 
-SQLAlchemy ORM
+### 👨‍🎓 STUDENT PORTAL
 
-Frontend
+| Feature                | Description                              |
+| ---------------------- | ---------------------------------------- |
+| 🔐 Secure Login        | Role-based authentication system         |
+| 📷 QR Boarding         | Scan dynamic QR code to mark attendance  |
+| 📍 Geofence Validation | Attendance allowed only near the bus     |
+| 📱 Device Binding      | One account linked to one device         |
+| 📜 Boarding History    | View complete boarding logs              |
+| 📩 Complaint System    | Report issues directly to administration |
 
-HTML5
+---
 
-Tailwind CSS
+### 🚍 DRIVER MODULE
 
-JavaScript (ES6+)
+| Feature                   | Description                           |
+| ------------------------- | ------------------------------------- |
+| 📡 Live GPS Tracking      | Driver device broadcasts bus location |
+| 👥 Passenger Manifest     | Real-time list of students on board   |
+| ✅ Smart Boarding Feedback | Instant success/failure message       |
+| 🚏 Geofence Alerts        | Alerts when bus reaches a stop        |
+| 📊 Trip Monitoring        | Track boarding activity during trip   |
 
-Database
+---
 
-SQLite (Local Development)
+### 🛡 ADMIN CONSOLE
 
-PostgreSQL (Production Ready)
+| Feature                    | Description                             |
+| -------------------------- | --------------------------------------- |
+| 👨‍💼 Student Management   | Add, update, or remove students         |
+| 🚌 Route Management        | Assign buses and transport routes       |
+| 💰 Fee Monitoring          | Track transport fee payment status      |
+| 📧 Automated Notifications | SMS / Email alerts for pending payments |
+| 🔒 Security Control        | Reset device bindings remotely          |
+| 📊 Data Analytics          | Attendance trends and bus occupancy     |
 
-Security & Validation
+---
 
-Device Fingerprinting
+## 🛠 TECHNOLOGY STACK
 
-SHA-256 Password Hashing
+### Backend
 
-Geofencing (Haversine Formula)
+* Python
+* Flask Framework
+* SQLAlchemy ORM
 
-APIs Used
+### Frontend
 
-HTML5 Geolocation API
+* HTML5
+* Tailwind CSS
+* JavaScript (ES6+)
 
-Html5-QRCode Scanner
+### Database
 
-🔒 SECURITY INFRASTRUCTURE
+* SQLite (Local Development)
+* PostgreSQL (Production Ready)
 
-The system implements a multi-layered security architecture to ensure reliable and tamper-proof attendance.
+### Security & Validation
 
-1️⃣ Device Fingerprinting
+* Device Fingerprinting
+* SHA-256 Password Hashing
+* Geofencing (Haversine Formula)
 
-Each student account is bound to a specific device, preventing credential sharing.
+### APIs Used
 
-2️⃣ GPS Geofencing
+* HTML5 Geolocation API
+* Html5-QRCode Scanner
 
-Attendance can only be marked if the student's device is within 100 meters of the bus location.
+---
 
-3️⃣ Secure Session Management
+## 🔒 SECURITY INFRASTRUCTURE
 
-Administrative actions use protected server-side sessions to prevent unauthorized access.
+The system implements a **multi-layered security architecture** to ensure reliable and tamper-proof attendance.
 
-4️⃣ Encrypted Credentials
+### 1️⃣ Device Fingerprinting
 
-User passwords are securely stored using SHA-256 hashing.
+Each student account is **bound to a specific device**, preventing credential sharing.
 
-🚀 QUICK START GUIDE
-1️⃣ Prerequisites
+### 2️⃣ GPS Geofencing
+
+Attendance can only be marked if the student's device is **within 100 meters of the bus location**.
+
+### 3️⃣ Secure Session Management
+
+Administrative actions use **protected server-side sessions** to prevent unauthorized access.
+
+### 4️⃣ Encrypted Credentials
+
+User passwords are securely stored using **SHA-256 hashing**.
+
+---
+
+## 🚀 QUICK START GUIDE
+
+### 1️⃣ Prerequisites
 
 Install the following:
 
-Python 3.9+
+* Python **3.9+**
+* Pip Package Manager
+* Git
 
-Pip Package Manager
+---
 
-Git
+### 2️⃣ Installation
 
-2️⃣ Installation
+```bash
 # Clone repository
 git clone https://github.com/your-username/VETIAS-Bus-System.git
 
@@ -161,71 +182,97 @@ source .venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
-3️⃣ Environment Setup
+```
 
-Create a .env file:
+---
 
+### 3️⃣ Environment Setup
+
+Create a `.env` file:
+
+```
 SECRET_KEY=your_secret_key
 SMTP_EMAIL=your_email
 SMTP_PASSWORD=your_password
-4️⃣ Initialize Database
+```
+
+---
+
+### 4️⃣ Initialize Database
+
+```
 python init_db_manual.py
-5️⃣ Run the Application
+```
+
+---
+
+### 5️⃣ Run the Application
+
+```
 python app.py
+```
 
 Open your browser:
 
+```
 http://127.0.0.1:5000
-📊 FUTURE ENHANCEMENTS
+```
+
+---
+
+## 📊 FUTURE ENHANCEMENTS
 
 Possible improvements for future versions:
 
-📱 Dedicated Android / iOS mobile app
+* 📱 Dedicated **Android / iOS mobile app**
+* 🔔 **Push notifications for parents**
+* 🛰 **Live bus tracking map**
+* 🤖 **AI route optimization**
+* 📈 **Advanced analytics dashboard**
 
-🔔 Push notifications for parents
+---
 
-🛰 Live bus tracking map
+## 📷 SYSTEM SCREENSHOTS
 
-🤖 AI route optimization
+*(You can add screenshots here later)*
 
-📈 Advanced analytics dashboard
-
-📷 SYSTEM SCREENSHOTS
-
-(You can add screenshots here later)
-
+```
 screenshots/
 │
 ├── login_page.png
 ├── admin_dashboard.png
 ├── qr_scan_page.png
 └── driver_panel.png
-🤝 CONTRIBUTING
+```
+
+---
+
+## 🤝 CONTRIBUTING
 
 Contributions are welcome.
 
 Steps:
 
-Fork the repository
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push the branch
+5. Submit a Pull Request
 
-Create a new branch
+---
 
-Commit your changes
+## 📄 LICENSE
 
-Push the branch
+This project is licensed under the **MIT License**.
 
-Submit a Pull Request
+See the `LICENSE` file for details.
 
-📄 LICENSE
+---
 
-This project is licensed under the MIT License.
+## 👨‍💻 DEVELOPER
 
-See the LICENSE file for details.
-
-👨‍💻 DEVELOPER
-
-Sudharsan S
+**Sudharsan S**
 Full Stack Developer
 
 Developed for
-VET Institute of Arts and Science – Transport Division
+**VET Institute of Arts and Science – Transport Division**

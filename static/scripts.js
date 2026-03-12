@@ -1,5 +1,5 @@
 /* 
-  VET IAS Bus System - Core Logic 
+  VET IAS COLLEGE BUS MANAGEMENT SYSTEM - Core Logic 
   Handles Device Binding, GPS Tracking, and QR Scanning
 */
 
